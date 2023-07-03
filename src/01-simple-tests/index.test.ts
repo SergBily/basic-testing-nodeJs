@@ -33,11 +33,11 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid action', () => {
     const result = simpleCalculator({ a: 15, b: 3, action: '%' });
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
     const result = simpleCalculator({ a: '15', b: 3, action: Action.Multiply });
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 });
